@@ -5,6 +5,7 @@ import { AppComponent } from './app/app.component';
 import { NgForComponent } from './app/ng-for/ng-for.component';
 import { EventBindingComponent } from './app/event-binding/event-binding.component';
 import { NgIfComponent } from './app/ng-if/ng-if.component';
+import { FormsComponent } from './app/forms/forms.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'ng-for',
     component: NgForComponent,
+  },
+  {
+    path: 'forms',
+    component: FormsComponent,
   },
 ];
 

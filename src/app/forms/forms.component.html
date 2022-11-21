@@ -1,0 +1,24 @@
+<form name="user-form" #userForm="ngForm" (submit)="save(userForm)">
+  <input
+    name="username"
+    #userName="ngModel"
+    [(ngModel)]="user.name"
+    required=""
+    placeholder="请输入用户名"
+  />
+  <input
+    name="age"
+    type="number"
+    #userAge="ngModel"
+    [(ngModel)]="user.age"
+    max="100"
+    min="1"
+    placeholder="请输入年龄"
+  />
+  <button type="submit">Submit</button>
+
+  <div *ngIf="userForm.invalid">
+    <div *ngIf="userName.invalid">用户名不能为空</div>
+    <div *ngIf="userAge.invalid">年龄必须在 1-100 之间</div>
+  </div>
+</form>
