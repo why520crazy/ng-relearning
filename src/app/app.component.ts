@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-relearning';
+  title = 'Hello Angular Relearning!';
 }
