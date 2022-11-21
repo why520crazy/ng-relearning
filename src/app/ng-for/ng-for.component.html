@@ -1,5 +1,9 @@
-<ol>
+<ol *ngIf="items else loading">
   <li *ngFor="let item of items">
     {{ item.title }}
   </li>
 </ol>
+
+<ng-template #loading>
+  <p>加载中...</p>
+</ng-template>
