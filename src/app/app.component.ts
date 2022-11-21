@@ -5,9 +5,17 @@ import { CommonModule } from '@angular/common';
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: true,
-  imports: [CommonModule],
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  // imports: [
+  //   CommonModule,
+  // ],
 })
 export class AppComponent {
-  title = 'Hello Angular Relearning!';
+  relearned = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.relearned = true;
+    }, 2000);
+  }
 }

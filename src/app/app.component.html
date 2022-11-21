@@ -1,1 +1,5 @@
-<h2>{{title}}</h2>
+<p *ngIf="relearned else default">很高兴看到你重新学习 Angular 这款优秀的框架！</p>
+
+<ng-template #default>
+  <p>我到现在还没有学习过 Angular 框架!</p>
+</ng-template>
