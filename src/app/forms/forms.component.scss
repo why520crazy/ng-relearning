@@ -1,3 +1,14 @@
 form {
-  padding: 10px 0px;
+  padding: 10px 20px;
+  width: 300px;
+}
+
+.mat-mdc-form-field {
+  display: block;
+  // margin-bottom: 10px;
+}
+
+.error-messages {
+  color: red;
+  margin-bottom: 10px;
 }
