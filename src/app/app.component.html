@@ -1,10 +1,14 @@
-<h2>{{ title }}</h2>
-
-<div>
-  <a [routerLink]="['./ng-if']">NgIf</a> |
-  <a [routerLink]="['./event-binding']">EventBinding</a> |
-  <a [routerLink]="['./ng-for']">NgFor</a> |
-  <a [routerLink]="['./forms']">Forms</a>
-</div>
+<nav style="width: 500px" mat-tab-nav-bar [tabPanel]="tabPanel">
+  <a
+    mat-tab-link
+    *ngFor="let item of links"
+    [routerLink]="[item.link]"
+    [active]="activeLink === item.link"
+    (isActiveChange)="activeLink = item.link"
+    routerLinkActive
+    >{{ item.text }}</a
+  >
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 
 <router-outlet></router-outlet>
