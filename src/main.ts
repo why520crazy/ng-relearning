@@ -6,6 +6,8 @@ import { NgForComponent } from './app/ng-for/ng-for.component';
 import { EventBindingComponent } from './app/event-binding/event-binding.component';
 import { NgIfComponent } from './app/ng-if/ng-if.component';
 import { FormsComponent } from './app/forms/forms.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { importProvidersFrom } from '@angular/core';
 
 const routes: Routes = [
   {
@@ -32,5 +34,5 @@ const routes: Routes = [
 ];
 
 bootstrapApplication(AppComponent, {
-  providers: [provideRouter(routes), provideHttpClient()],
+  providers: [provideRouter(routes), provideHttpClient(), importProvidersFrom(BrowserAnimationsModule)],
 }).catch((err) => console.error(err));
