@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Todo, TodoService } from '../todo.service';
 
@@ -9,12 +9,13 @@ import { Todo, TodoService } from '../todo.service';
   templateUrl: './ng-for.component.html',
   styleUrls: ['./ng-for.component.scss'],
 })
-export class NgForComponent {
-  items!: Todo[];
+export class NgForComponent implements OnInit {
 
-  constructor(private todoService: TodoService) {
-    this.todoService.fetchTodos().subscribe((items) => {
-      this.items = items;
-    });
+  todoService = inject(TodoService);
+
+  constructor() {}
+
+  ngOnInit(): void {
+    this.todoService.fetchTodos().subscribe();
   }
 }

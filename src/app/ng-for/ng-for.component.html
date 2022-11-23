@@ -1,5 +1,5 @@
-<ol *ngIf="items else loading">
-  <li *ngFor="let item of items">
+<ol *ngIf="todoService.todos else loading">
+  <li *ngFor="let item of todoService.todos">
     {{ item.title }}
   </li>
 </ol>
