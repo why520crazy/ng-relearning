@@ -13,6 +13,7 @@ HttpClient|[v0.5](https://github.com/why520crazy/ng-relearning/tree/v0.5) | Http
 Forms|[v0.6](https://github.com/why520crazy/ng-relearning/tree/v0.6) | 表单
 Material|[v0.7](https://github.com/why520crazy/ng-relearning/tree/v0.7) | 引入类库 Material 组件库
 Service|[v0.8](https://github.com/why520crazy/ng-relearning/tree/v0.8) | 使用服务获取数据并绑定到组件中
+Directive Composition API|[v0.9](https://github.com/why520crazy/ng-relearning/tree/v0.9) | 组合指令 API
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/why520crazy/ng-relearning)
